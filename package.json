@@ -1,0 +1,24 @@
+{
+  "name": "iclinic-challenge",
+  "version": "1.0.0",
+  "description": "iClinic Challenge - RESTful API for prescriptions",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "jest specs --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esparen/iclinic-node-challenge.git"
+  },
+  "author": "Ederson Sparenberger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/esparen/iclinic-node-challenge/issues"
+  },
+  "homepage": "https://github.com/esparen/iclinic-node-challenge#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
+}
