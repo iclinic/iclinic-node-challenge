@@ -1,8 +1,12 @@
 const mongoose = require('mongoose');
 const config = require('config');
 
-module.exports = function() {
+module.exports = async function() {
   const targetDB = config.get('db');
-  mongoose.connect(targetDB)
-    .then(() => console.info(`Connected to ${targetDB}...`));
+  try {
+    const db = await mongoose.connect(targetDB);
+  } catch (error) {
+    throw new Error(error);
+  } 
+  
 }

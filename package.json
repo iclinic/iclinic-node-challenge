@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "iClinic Challenge - RESTful API for prescriptions",
   "main": "server.js",
+  "jest": {
+    "verbose": true,
+    "testEnvironment": "node"
+  },
   "scripts": {
     "start": "nodemon server.js",
-    "test": "jest specs --coverage --watchAll --verbose"
+    "test": "jest --testEnvironment=node --watchAll --verbose --detectOpenHandles"
   },
   "repository": {
     "type": "git",
